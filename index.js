@@ -5,6 +5,6 @@ document.querySelector('form').addEventListener('submit', (e) => {
 	const linkInput = document.querySelector('#link-input');
 	msgInput.value = '';
 	document.querySelector('#message-input-container').classList.add('hidden');
-	linkInput.value = encoded;
+	linkInput.value = `${window.location}#${encoded}`;
 	document.querySelector('#link-input-container').classList.remove('hidden');
 });
